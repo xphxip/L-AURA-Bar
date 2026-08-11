@@ -21,13 +21,13 @@ const steps = [
 
 export default function StepByStep() {
   return (
-    <section className="py-24 px-6 md:px-12 bg-dark-surface border-y border-white/5">
+    <section className="py-24 px-6 md:px-12 bg-dark-surface border-y border-dark-border">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mb-4 text-white">
+          <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mb-4 text-gray-900">
             Uma noite orquestrada
           </h2>
-          <p className="text-lg text-gray-400 font-light">
+          <p className="text-lg text-gray-600 font-light">
             Cada momento no L'Aura é cuidadosamente pensado para transcender o ordinário.
           </p>
         </div>
@@ -50,8 +50,8 @@ export default function StepByStep() {
                   0{index + 1}
                 </div>
                 <div className="pt-3">
-                  <h3 className="text-xl md:text-2xl font-serif text-white mb-2">{step.title}</h3>
-                  <p className="text-gray-400 font-light leading-relaxed">{step.description}</p>
+                  <h3 className="text-xl md:text-2xl font-serif text-gray-900 mb-2">{step.title}</h3>
+                  <p className="text-gray-600 font-light leading-relaxed">{step.description}</p>
                 </div>
               </motion.div>
             ))}

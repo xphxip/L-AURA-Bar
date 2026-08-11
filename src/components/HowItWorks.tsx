@@ -25,11 +25,11 @@ export default function HowItWorks() {
         {/* Text Content */}
         <div className="space-y-10">
           <div>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mb-6 text-white">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mb-6 text-gray-900">
               Uma experiência <br />
               <span className="gold-shimmer-text italic font-light">sem paralelos.</span>
             </h2>
-            <p className="text-lg text-gray-300 font-light leading-relaxed">
+            <p className="text-lg text-gray-600 font-light leading-relaxed">
               Desde o momento em que você cruza nossas portas, o mundo lá fora deixa de existir. O ambiente à meia-luz, o som do gelo lapidado e o jazz suave criam a atmosfera perfeita para sua noite.
             </p>
           </div>
@@ -41,11 +41,11 @@ export default function HowItWorks() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <h3 className="text-xl font-serif text-white mb-2 flex items-center gap-4">
+              <h3 className="text-xl font-serif text-gray-900 mb-2 flex items-center gap-4">
                 <span className="text-gold text-sm tracking-widest uppercase">01.</span>
                 Recepção Exclusiva
               </h3>
-              <p className="text-gray-400 pl-10 font-light">
+              <p className="text-gray-600 pl-10 font-light">
                 Sem filas ou esperas prolongadas. Sua mesa reservada e nosso host pronto para guiá-lo em uma jornada de sabores.
               </p>
             </motion.div>
@@ -56,11 +56,11 @@ export default function HowItWorks() {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <h3 className="text-xl font-serif text-white mb-2 flex items-center gap-4">
+              <h3 className="text-xl font-serif text-gray-900 mb-2 flex items-center gap-4">
                 <span className="text-gold text-sm tracking-widest uppercase">02.</span>
                 Curadoria de Sabores
               </h3>
-              <p className="text-gray-400 pl-10 font-light">
+              <p className="text-gray-600 pl-10 font-light">
                 Deixe-se levar pelas sugestões de nossos sommeliers e mixologistas premiados, que adaptarão as bebidas ao seu paladar.
               </p>
             </motion.div>
@@ -86,8 +86,8 @@ export default function HowItWorks() {
                   <GlassWater className="text-gold" size={20} strokeWidth={1.5} />
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm font-serif text-white drop-shadow-[0_0_8px_rgba(255,215,0,0.1)]">Mesa VIP Confirmada</div>
-                  <div className="text-xs text-gray-400 font-light mt-1">Lounge Privativo {item}</div>
+                  <div className="text-sm font-serif text-gray-900 drop-shadow-[0_0_8px_rgba(255,215,0,0.1)]">Mesa VIP Confirmada</div>
+                  <div className="text-xs text-gray-500 font-light mt-1">Lounge Privativo {item}</div>
                 </div>
                 <div className="text-right">
                   <div className="font-serif text-gold text-sm drop-shadow-[0_0_4px_rgba(255,215,0,0.4)]">21:00</div>

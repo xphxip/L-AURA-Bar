@@ -70,10 +70,10 @@ export default function FileTransfer() {
       <div className="absolute inset-0 bg-gradient-to-b from-dark-surface to-dark-bg pointer-events-none" />
       
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center relative z-10">
-        <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mb-6 max-w-2xl text-white">
+        <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mb-6 max-w-2xl text-gray-900">
           Nossa <span className="gold-shimmer-text">Curadoria.</span>
         </h2>
-        <p className="text-lg text-gray-300 font-light leading-relaxed mb-24 max-w-2xl">
+        <p className="text-lg text-gray-600 font-light leading-relaxed mb-24 max-w-2xl">
           Uma seleção rigorosa de destilados raros, vinhos premiados e gastronomia pensada para harmonizar com momentos excepcionais.
         </p>
 
@@ -101,7 +101,7 @@ export default function FileTransfer() {
                 {menu.icon}
               </div>
               <div className="space-y-3 w-full text-center mt-2">
-                <span className="font-serif text-white text-lg block group-hover:text-gold transition-colors duration-300">{menu.name}</span>
+                <span className="font-serif text-gray-900 text-lg block group-hover:text-gold transition-colors duration-300">{menu.name}</span>
                 <div className="h-[1px] bg-gold/30 w-full" />
                 <span className="text-xs text-gold uppercase tracking-[0.2em] font-bold opacity-80 group-hover:opacity-100 transition-opacity">Explorar</span>
               </div>
@@ -119,7 +119,7 @@ export default function FileTransfer() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedMenu(null)}
-              className="fixed inset-0 bg-black/80 backdrop-blur-md z-40"
+              className="fixed inset-0 bg-black/40 backdrop-blur-md z-40"
             />
             <motion.div
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
@@ -136,7 +136,7 @@ export default function FileTransfer() {
               </button>
               
               <div className="text-center mb-10">
-                <h3 className="text-3xl md:text-4xl font-serif text-white mb-3 drop-shadow-md">{activeData.title}</h3>
+                <h3 className="text-3xl md:text-4xl font-serif text-gray-900 mb-3 drop-shadow-md">{activeData.title}</h3>
                 <p className="text-gold text-sm tracking-[0.15em] uppercase font-bold opacity-80">{activeData.subtitle}</p>
                 <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-gold/50 to-transparent mx-auto mt-6" />
               </div>
@@ -150,11 +150,11 @@ export default function FileTransfer() {
                   {activeData.items.map((item, idx) => (
                     <div key={idx} className="group cursor-default">
                       <div className="flex justify-between items-baseline mb-2">
-                        <h4 className="text-xl font-serif text-white group-hover:text-gold-light transition-colors">{item.name}</h4>
-                        <div className="flex-1 border-b border-dotted border-gray-600/50 mx-4 relative top-[-6px]" />
+                        <h4 className="text-xl font-serif text-gray-900 group-hover:text-gold-light transition-colors">{item.name}</h4>
+                        <div className="flex-1 border-b border-dotted border-gray-400/50 mx-4 relative top-[-6px]" />
                         <span className="text-gold font-serif text-xl drop-shadow-[0_0_4px_rgba(255,215,0,0.2)]">{item.price}</span>
                       </div>
-                      <p className="text-gray-400 font-light text-sm md:text-base leading-relaxed max-w-[95%]">{item.desc}</p>
+                      <p className="text-gray-600 font-light text-sm md:text-base leading-relaxed max-w-[95%]">{item.desc}</p>
                     </div>
                   ))}
                 </div>

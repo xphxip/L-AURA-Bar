@@ -9,15 +9,15 @@ export default function Footer() {
             <div className="text-gold">
               <Wine size={24} strokeWidth={1.5} />
             </div>
-            <span className="font-serif font-bold text-xl tracking-widest text-white uppercase">L'Aura</span>
+            <span className="font-serif font-bold text-xl tracking-widest text-gray-900 uppercase">L'Aura</span>
           </div>
-          <p className="text-gray-400 text-sm font-light text-center md:text-left">
+          <p className="text-gray-600 text-sm font-light text-center md:text-left">
             Av. Faria Lima, 3000 - Rooftop<br/>
             São Paulo, SP
           </p>
         </div>
         
-        <nav className="flex flex-col md:flex-row items-center gap-6 md:gap-10 text-xs text-gray-400 tracking-widest uppercase font-light">
+        <nav className="flex flex-col md:flex-row items-center gap-6 md:gap-10 text-xs text-gray-600 tracking-widest uppercase font-light">
           <a href="#" className="hover:text-gold hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.5)] transition-all duration-300">Reservas</a>
           <a href="#" className="hover:text-gold hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.5)] transition-all duration-300">Dress Code</a>
           <a href="#" className="hover:text-gold hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.5)] transition-all duration-300">Eventos Privados</a>

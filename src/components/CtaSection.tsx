@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function CtaSection() {
   return (
-    <section className="bg-dark-bg text-white py-24 md:py-32 px-6 md:px-12 relative border-t border-gold/15 overflow-hidden">
+    <section className="bg-dark-bg text-gray-900 py-24 md:py-32 px-6 md:px-12 relative border-t border-gold/15 overflow-hidden">
       {/* Intense background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gold/15 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1200px] h-[200px] bg-amber/10 rounded-full blur-[100px] pointer-events-none" />
@@ -31,7 +31,7 @@ export default function CtaSection() {
           <h2 className="text-3xl md:text-6xl font-serif font-bold tracking-tight mb-6">
             As noites mais exclusivas da cidade <span className="gold-shimmer-text">esperam por você.</span>
           </h2>
-          <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+          <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto font-light">
             Vagas limitadas por noite para garantir a excelência do nosso serviço. Garanta sua mesa.
           </p>
           

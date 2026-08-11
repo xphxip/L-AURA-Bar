@@ -18,7 +18,7 @@ export default function Pricing() {
             A Experiência Completa
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-serif tracking-tight text-white drop-shadow-md">
+          <h2 className="text-4xl md:text-6xl font-serif tracking-tight text-gray-900 drop-shadow-md">
             Menu <span className="gold-shimmer-text">Degustação</span>
           </h2>
           
@@ -28,7 +28,7 @@ export default function Pricing() {
             <div className="h-[1px] w-16 bg-gradient-to-l from-transparent to-gold/60" />
           </div>
           
-          <p className="text-lg text-gray-300 max-w-xl mx-auto leading-relaxed font-light">
+          <p className="text-lg text-gray-600 max-w-xl mx-auto leading-relaxed font-light">
             Uma imersão de 5 tempos nos mistérios da mixologia moderna, guiada pessoalmente pelo nosso Head Bartender. Inclui harmonização com gastronomia de vanguarda.
           </p>
           

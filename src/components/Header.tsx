@@ -27,7 +27,7 @@ export default function Header() {
           <div className="text-gold group-hover:text-gold-light group-hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.6)] transition-all duration-300">
             <Wine size={26} strokeWidth={1.5} />
           </div>
-          <span className="font-serif font-bold text-xl md:text-2xl tracking-[0.2em] text-white uppercase">L'Aura</span>
+          <span className={`font-serif font-bold text-xl md:text-2xl tracking-[0.2em] uppercase transition-colors duration-300 ${isScrolled ? 'text-gray-900' : 'text-white'}`}>L'Aura</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-10">
@@ -39,7 +39,7 @@ export default function Header() {
             <a 
               key={item.href}
               href={item.href} 
-              className="text-gray-400 hover:text-gold text-xs tracking-[0.15em] uppercase transition-colors duration-300 relative group"
+              className={`${isScrolled ? 'text-gray-600 hover:text-gray-900' : 'text-gray-300 hover:text-white'} text-xs tracking-[0.15em] uppercase transition-colors duration-300 relative group`}
             >
               {item.label}
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold group-hover:w-full transition-all duration-300" />
@@ -67,10 +67,10 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden bg-dark-bg/95 backdrop-blur-xl border-t border-gold/10 px-6 py-8 space-y-6"
         >
-          <a href="#experiencia" onClick={() => setMobileOpen(false)} className="block text-gray-300 text-sm tracking-widest uppercase hover:text-gold transition-colors">A Experiência</a>
-          <a href="#menu" onClick={() => setMobileOpen(false)} className="block text-gray-300 text-sm tracking-widest uppercase hover:text-gold transition-colors">Menu</a>
-          <a href="#ambientes" onClick={() => setMobileOpen(false)} className="block text-gray-300 text-sm tracking-widest uppercase hover:text-gold transition-colors">Ambientes</a>
-          <button className="w-full bg-gold text-dark-bg py-3 text-xs uppercase tracking-widest font-bold mt-4">Reservar Mesa</button>
+          <a href="#experiencia" onClick={() => setMobileOpen(false)} className="block text-gray-700 text-sm tracking-widest uppercase hover:text-gold transition-colors">A Experiência</a>
+          <a href="#menu" onClick={() => setMobileOpen(false)} className="block text-gray-700 text-sm tracking-widest uppercase hover:text-gold transition-colors">Menu</a>
+          <a href="#ambientes" onClick={() => setMobileOpen(false)} className="block text-gray-700 text-sm tracking-widest uppercase hover:text-gold transition-colors">Ambientes</a>
+          <button className="w-full bg-gold text-dark-bg py-3 text-xs uppercase tracking-widest font-bold mt-4 shadow-sm">Reservar Mesa</button>
         </motion.div>
       )}
     </motion.header>

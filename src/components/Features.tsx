@@ -38,7 +38,7 @@ const itemVariants = {
 
 export default function Features() {
   return (
-    <section className="py-20 px-6 md:px-12 bg-dark-bg border-t border-white/5 relative z-20">
+    <section className="py-20 px-6 md:px-12 bg-dark-bg border-t border-dark-border relative z-20">
       {/* Section divider */}
       <div className="flex items-center justify-center mb-12">
         <div className="h-[1px] w-16 bg-gold/30" />
@@ -59,12 +59,12 @@ export default function Features() {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -3, borderColor: "rgba(212,175,55,0.4)" }}
-              className="flex items-center gap-3 bg-dark-surface/40 backdrop-blur-sm px-5 py-3.5 border border-white/5 hover:bg-dark-surface transition-all duration-300 group cursor-default"
+              className="flex items-center gap-3 bg-dark-surface/40 backdrop-blur-sm px-5 py-3.5 border border-dark-border hover:bg-dark-surface transition-all duration-300 group cursor-default"
             >
               <div className="text-gold/60 group-hover:text-gold transition-colors duration-300">
                 {feature.icon}
               </div>
-              <span className="font-light text-gray-300 text-[13px] tracking-wider group-hover:text-white transition-colors duration-300">{feature.label}</span>
+              <span className="font-light text-gray-600 text-[13px] tracking-wider group-hover:text-gray-900 transition-colors duration-300">{feature.label}</span>
             </motion.div>
           ))}
         </motion.div>

@@ -18,7 +18,7 @@ export default function FounderMemo() {
           <Quote className="absolute top-10 left-10 text-gold/10 w-32 h-32 rotate-180 pointer-events-none" />
           
           <div className="relative z-10">
-            <p className="text-2xl md:text-4xl font-serif text-white leading-relaxed italic mb-12 font-light drop-shadow-sm">
+            <p className="text-2xl md:text-4xl font-serif text-gray-900 leading-relaxed italic mb-12 font-light drop-shadow-sm">
               "Para nós, um coquetel não é apenas uma bebida. É uma <span className="gold-shimmer-text">narrativa líquida</span>, uma viagem no tempo e um tributo aos ingredientes mais raros que a terra tem a oferecer."
             </p>
             
@@ -29,7 +29,7 @@ export default function FounderMemo() {
                 </div>
               </div>
               <div>
-                <h4 className="font-serif text-white text-2xl">Valentino Rossi</h4>
+                <h4 className="font-serif text-gray-900 text-2xl">Valentino Rossi</h4>
                 <p className="text-gold text-[11px] tracking-[0.2em] uppercase font-bold mt-1">Head Mixologist</p>
               </div>
             </div>

@@ -17,10 +17,10 @@ export default function BrandingCarousel() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold/5 via-dark-bg to-dark-bg pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 text-center mb-16 relative z-10">
-        <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mb-4 text-white">
+        <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mb-4 text-gray-900">
           Nossos <span className="gold-shimmer-text">Espaços</span>
         </h2>
-        <p className="text-lg text-gray-300 font-light">
+        <p className="text-lg text-gray-600 font-light">
           Cada ambiente foi projetado para oferecer uma atmosfera distinta, adaptando-se perfeitamente ao tom da sua noite.
         </p>
       </div>
