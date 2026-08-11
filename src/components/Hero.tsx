@@ -3,7 +3,10 @@ import { Martini } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="pt-28 md:pt-36 pb-10 px-6 md:px-12 overflow-hidden relative">
+    <section 
+      className="pt-28 md:pt-36 pb-10 px-6 md:px-12 overflow-hidden relative bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 1)), url('/images/hero_bg_1786471969965.png')` }}
+    >
       {/* Rich warm background glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-amber/15 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-wine/20 rounded-full blur-[120px] pointer-events-none" />

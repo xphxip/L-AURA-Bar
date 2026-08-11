@@ -10,10 +10,11 @@ const menus = [
 ];
 
 // Mock data for the modal
-const menuDetails: Record<string, { title: string; subtitle: string; items: { name: string; desc: string; price: string }[] }> = {
+const menuDetails: Record<string, { title: string; subtitle: string; image: string; items: { name: string; desc: string; price: string }[] }> = {
   assinaturas: {
     title: "Coquetéis Assinatura",
     subtitle: "Nossa interpretação da alta coquetelaria mundial",
+    image: "/images/assinaturas_1786471951334.png",
     items: [
       { name: "Midnight Symphony", desc: "Gin botânico infundido com flor de lótus, licor de sabugueiro, cítricos defumados.", price: "R$ 65" },
       { name: "Ouro Líquido", desc: "Whisky single malt envelhecido, redução de mel trufado, bitter de cacau.", price: "R$ 85" },
@@ -23,6 +24,7 @@ const menuDetails: Record<string, { title: string; subtitle: string; items: { na
   adega: {
     title: "A Adega",
     subtitle: "Rótulos raros e safras excepcionais",
+    image: "/images/adega_1786471961195.png",
     items: [
       { name: "Château Margaux 2015", desc: "Bordeaux exuberante com notas de violeta e frutas negras. (Taça)", price: "R$ 350" },
       { name: "Dom Pérignon Vintage", desc: "Champagne elegante, perfeito para celebrações inesquecíveis. (Garrafa)", price: "R$ 2.400" },
@@ -32,6 +34,7 @@ const menuDetails: Record<string, { title: string; subtitle: string; items: { na
   tapas: {
     title: "Tapas & Bites",
     subtitle: "Pequenas porções de alta gastronomia",
+    image: "/images/tapas_bites_1786471870772.png",
     items: [
       { name: "Tartare Trufado", desc: "Mignon picado na ponta da faca, azeite de trufas brancas, gema curada.", price: "R$ 95" },
       { name: "Ostras Frescas", desc: "6 unidades com vinagrete de maçã verde e caviar Ossetra.", price: "R$ 145" },
@@ -41,6 +44,7 @@ const menuDetails: Record<string, { title: string; subtitle: string; items: { na
   charutos: {
     title: "Charutos Premium",
     subtitle: "O complemento perfeito para seu destilado",
+    image: "/images/charutos_1786471889139.png",
     items: [
       { name: "Cohiba Siglo VI", desc: "O auge da produção cubana, sabor rico e complexo.", price: "R$ 450" },
       { name: "Montecristo No. 2", desc: "Clássico figurado, notas de café, cacau e especiarias doces.", price: "R$ 320" },
@@ -137,17 +141,23 @@ export default function FileTransfer() {
                 <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-gold/50 to-transparent mx-auto mt-6" />
               </div>
 
-              <div className="space-y-8">
-                {activeData.items.map((item, idx) => (
-                  <div key={idx} className="group cursor-default">
-                    <div className="flex justify-between items-baseline mb-2">
-                      <h4 className="text-xl font-serif text-white group-hover:text-gold-light transition-colors">{item.name}</h4>
-                      <div className="flex-1 border-b border-dotted border-gray-600/50 mx-4 relative top-[-6px]" />
-                      <span className="text-gold font-serif text-xl drop-shadow-[0_0_4px_rgba(255,215,0,0.2)]">{item.price}</span>
+              <div className="flex flex-col md:flex-row gap-10 items-start">
+                <div className="w-full md:w-2/5 shrink-0 rounded-sm overflow-hidden border border-gold/15 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.8)]">
+                  <img src={activeData.image} alt={activeData.title} className="w-full h-auto object-cover max-h-[300px] md:max-h-[400px]" />
+                </div>
+                
+                <div className="space-y-8 flex-1 w-full">
+                  {activeData.items.map((item, idx) => (
+                    <div key={idx} className="group cursor-default">
+                      <div className="flex justify-between items-baseline mb-2">
+                        <h4 className="text-xl font-serif text-white group-hover:text-gold-light transition-colors">{item.name}</h4>
+                        <div className="flex-1 border-b border-dotted border-gray-600/50 mx-4 relative top-[-6px]" />
+                        <span className="text-gold font-serif text-xl drop-shadow-[0_0_4px_rgba(255,215,0,0.2)]">{item.price}</span>
+                      </div>
+                      <p className="text-gray-400 font-light text-sm md:text-base leading-relaxed max-w-[95%]">{item.desc}</p>
                     </div>
-                    <p className="text-gray-400 font-light text-sm md:text-base leading-relaxed max-w-[85%]">{item.desc}</p>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
               
               <div className="mt-12 text-center">

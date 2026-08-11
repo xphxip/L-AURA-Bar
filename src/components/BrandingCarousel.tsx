@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const ambientes = [
-  { name: "O Balcão Principal", color: "from-dark-border to-dark-bg" },
-  { name: "Lounge Privativo", color: "from-amber/30 to-dark-bg" },
-  { name: "Terraço Noturno", color: "from-gold/20 to-dark-bg" },
-  { name: "Adega Subterrânea", color: "from-wine/40 to-dark-bg" },
-  { name: "Sala dos Espelhos", color: "from-burgundy/50 to-dark-bg" },
+  { name: "O Balcão Principal", color: "from-dark-border to-dark-bg", image: "/images/balcao_principal_1786471899197.png" },
+  { name: "Lounge Privativo", color: "from-amber/30 to-dark-bg", image: "/images/lounge_privativo_1786471909898.png" },
+  { name: "Terraço Noturno", color: "from-gold/20 to-dark-bg", image: "/images/terraco_noturno_1786471919758.png" },
+  { name: "Adega Subterrânea", color: "from-wine/40 to-dark-bg", image: "/images/adega_1786471961195.png" },
+  { name: "Sala dos Espelhos", color: "from-burgundy/50 to-dark-bg", image: "/images/sala_espelhos_1786471929908.png" },
 ];
 
 export default function BrandingCarousel() {
@@ -44,8 +44,12 @@ export default function BrandingCarousel() {
               key={index} 
               className="w-[320px] h-[450px] flex-shrink-0 rounded-sm overflow-hidden border border-gold/15 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.8)] relative group cursor-pointer"
             >
-              {/* Fake Image Background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${ambiente.color} opacity-80 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105`} />
+              {/* Image Background */}
+              <div 
+                className={`absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105`} 
+                style={{ backgroundImage: `url(${ambiente.image})` }}
+              />
+              <div className={`absolute inset-0 bg-gradient-to-br ${ambiente.color} mix-blend-overlay opacity-60`} />
               
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-dark-bg via-dark-bg/60 to-transparent">
                 <div className="w-10 h-[2px] bg-gold mb-4 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 shadow-[0_0_8px_rgba(255,215,0,0.8)]" />
