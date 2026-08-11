@@ -46,10 +46,10 @@ export default function BrandingCarousel() {
             >
               {/* Image Background */}
               <div 
-                className={`absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105`} 
+                className={`absolute inset-0 bg-cover bg-center bg-no-repeat opacity-85 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105`} 
                 style={{ backgroundImage: `url(${ambiente.image})` }}
               />
-              <div className={`absolute inset-0 bg-gradient-to-br ${ambiente.color} mix-blend-overlay opacity-60`} />
+              <div className={`absolute inset-0 bg-gradient-to-br ${ambiente.color} mix-blend-overlay opacity-30 group-hover:opacity-10 transition-all duration-700`} />
               
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-dark-bg via-dark-bg/60 to-transparent">
                 <div className="w-10 h-[2px] bg-gold mb-4 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 shadow-[0_0_8px_rgba(255,215,0,0.8)]" />
